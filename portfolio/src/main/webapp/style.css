@@ -144,8 +144,10 @@ a{
 #projectContainerDescription{
     position: fixed;
     font-size: 0.95vw;
-    margin-top: -7%;
-    margin-left: 2%;
+    margin-top: -8%;
+    margin-left: 3%;
+    width: 35vw;
+    height: 13vh;
     font-weight: 900;
     color: #ea00d9;
 }
@@ -158,10 +160,10 @@ a{
 
 #projectContainerNextButton{ 
     
-    margin-left: -13%;
+    margin-left: -9%;
     margin-top: 28%;
 }
 
 #projectContainerReturnButton{
-    margin-left: 15%;
+    margin-left: 17%;
 }
