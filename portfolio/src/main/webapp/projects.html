@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="projectInformation.js"></script>
+    <script src="projectContainer.js"></script>
+    <script src="projectController.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+     <div>
+         <div id = "projectContainer">
+             <p id = "projectContainerTitle">
+             
+                Davatrix: Rise of the Fallen Ones
+             
+             </p>
+            <img id = "projectContainerImagePanel" src="images/projectBackground.png"/>
+            <a id = "projectContainerURL" href = "https://www.newgrounds.com/portal/view/729701" target = "_blank"> 
+                <img id = "projectContainerImage" src = "images/davatrix-RotFO.png"/>
+            </a>
+            <p id = "projectContainerDescription">
+                Help ITESM professor Davalos defend a computer from a virus.<br><br>
+                Click on the image to play the game! (will redict to Newgrounds.com)
+            </p>
+            <button onclick="loadProject(true)" class = "link projectContainerButton buttonEffect" id = "projectContainerNextButton"> Next </button>
+            <button onclick="loadProject(false)" class = "link projectContainerButton buttonEffect" id = projectContainerPreviousButton> Previous </button>
+            <div class = "information link projectContainerButton buttonEffect" id = "projectContainerReturnButton">
+                <a href = "index.html">
+                    Return
+                </a>
+            </div>
+         </div>
+     </div>
+  </body>
+</html>

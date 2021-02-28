@@ -1,9 +1,171 @@
+
+body{
+    background-color: black;
+    background-image: url("/images/animated_background2.gif");
+    background-size: cover;
+    background-repeat: space;
+    width: 99.5vw;
+    height: 48vw;
+    font-family: 'Orbitron', sans-serif ;
+    color: #0abdc6;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+a{
+    color:#0abdc6;
+}
+
+
+.information{
+    text-align: center;
+    font-size: 2vh;
+    justify-self: center;
+    align-self: center;
+}
+
+.link{
+    background-image: url("images/button.png");
+    background-color: transparent;
+    background-position-y: 30%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 2vh;
+    font-family: 'Orbitron', sans-serif ;
+    color: #0abdc6;
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.projectContainerButton{
+    position: fixed;
+    padding-bottom: 8.07vh;
+    z-index: 1;
+    font-weight:900;
+    outline: none;
+}
+.buttonEffect:hover{ 
+    opacity: 0.8;
+}
+
+.buttonEffect:active{ 
+    opacity: 0.8;
+    color: #711c91;
+    outline: none;
+}
+
 #content {
   margin-left: auto;
   margin-right: auto;
   width: 650px;
+  background-image: url("images/PanelWindow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: auto;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%; 
+  margin-top: -20%;
+  margin-left: -25%;
 }
 
-#greeting-container {
-  margin-top: 20px;
+#github{
+    display: inline-block;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+#linkedIn{
+    display: inline-block;
+    margin-left: 15%;
+}
+
+#projects{
+    display: inline-block;
+    margin-left: 14.5%;
+}
+
+#myName{
+    font-size: 4vh;
+    font-weight: 900;
+}
+
+#myDescription{
+    font-size: 2.5vh;
+    margin-bottom: -13%
+}
+
+#navigationButtons{
+    margin-top: 25%;
+    display: grid;
+    background-color: red;
+    grid-template-columns: repeat(4 2fr) ;
+}
+
+#projectContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20%;
+    margin-left: -21%;
+    text-align: center;
+}
+
+#projectContainerTitle{
+    color: #ea00d9;
+    position: flex;
+    z-index: 1;
+    text-align: center;
+    background-image: url("/images/PanelWindow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 2vw;
+    font-weight: 900;
+    margin-left: 0%;
+}
+
+#projectContainerImagePanel{
+    opacity: 0.9;
+    width: 40vw;
+}
+
+#projectContainerImage{
+    position: fixed;
+    width: 20vw;
+    margin-left: -30%;
+    margin-top: 3.25%;
+}
+
+#projectContainerDescription{
+    position: fixed;
+    font-size: 0.95vw;
+    margin-top: -8%;
+    margin-left: 3%;
+    width: 35vw;
+    height: 13vh;
+    font-weight: 900;
+    color: #ea00d9;
+}
+
+
+#projectContainerPreviousButton{ 
+    margin-left: -38%;
+    margin-top: 28%;
+}
+
+#projectContainerNextButton{ 
+    
+    margin-left: -9%;
+    margin-top: 28%;
+}
+
+#projectContainerReturnButton{
+    margin-left: 17%;
 }
