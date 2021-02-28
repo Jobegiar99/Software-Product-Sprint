@@ -8,6 +8,8 @@ body{
     height: 48vw;
     font-family: 'Orbitron', sans-serif ;
     color: #0abdc6;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 a{

@@ -12,7 +12,7 @@ let ProjectContainer = class{
         let davatrixDotW = new ProjectInformation(
             "Davatrix: Dungeons of the Web",
             "images/davatrix-DotW.png",
-            "https://www.newgrounds.com/portal/view/729701",
+            "https://www.newgrounds.com/portal/view/757760",
             "Help ITESM professor Davalos and Vinton Cerf to <br> save the internet from anonymous and avenge their students!<br><br>" +
             "Click on the image to play the game! (will open a new tab)"
         );

@@ -16,10 +16,10 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>YOUR_PROJECT_ID_HERE</googleCloudProjectId>
+    <googleCloudProjectId>jgironarana-sps-spring21</googleCloudProjectId>
   </properties>
 
-  <dependencies>
+  <dependencies> 
     <!-- Java Servlets API -->
     <dependency>
       <groupId>javax.servlet</groupId>
