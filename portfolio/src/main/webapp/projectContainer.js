@@ -65,26 +65,28 @@ let ProjectContainer = class{
             "Click on the image to check it! (will open a new tab)"
         );
 
-        this.nextProject ={
-            "Davatrix: Rise of the Fallen Ones" : davatrixDotW ,
-            "Davatrix: Dungeons of the Web"  :houseDefender,
-            "House Defender"  :binaryDefender,
-            "Binary Defender"  :navidApp,
-            "NavidApp": potionOfGod,
-            "Potion of God": mathnote,
-            "Mathnote": testCaseGenerator,
-            "Test Case Generator": davatrixRoTFO
-        }
+        this.projectIndex = 0;
+        this.projectArrayInfo = [davatrixRoTFO, davatrixDotW, houseDefender, binaryDefender, navidApp, potionOfGod, mathnote, testCaseGenerator ];
 
-        this.previousProject = {
-            "Davatrix: Rise of the Fallen Ones": testCaseGenerator,
-            "Test Case Generator": mathnote,
-            "Mathnote": potionOfGod,
-            "Potion of God": navidApp,
-            "NavidApp": binaryDefender,
-            "Binary Defender": houseDefender,
-            "House Defender": davatrixDotW,
-            "Davatrix: Dungeons of the Web": davatrixRoTFO
-        }
+    }
+
+    loadNext(){
+        if( this.projectIndex + 1 < this.projectArrayInfo.length)
+            this.projectIndex += 1;
+
+        else
+            this.projectIndex = 0;
+
+        return this.projectArrayInfo[this.projectIndex];
+    }
+
+    loadPrevious(){
+        if( this.projectIndex - 1 > -1)
+            this.projectIndex -= 1;
+            
+        else
+            this.projectIndex = this.projectArrayInfo.length - 1;
+
+        return this.projectArrayInfo[this.projectIndex];
     }
 }
