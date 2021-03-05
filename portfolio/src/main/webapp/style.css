@@ -85,6 +85,12 @@ a{
     margin-left: 15%;
 }
 
+#randomFacts{
+    display: inline-block;
+    margin-left: 8.5%;
+    width: 10vw;
+}
+
 #projects{
     display: inline-block;
     margin-left: 14.5%;
