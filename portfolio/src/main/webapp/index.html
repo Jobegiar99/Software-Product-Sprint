@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <script src = "fetchLoader.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -41,12 +42,22 @@
         </div>
 
         <div class = "information link buttonEffect" id = "randomFacts">
-            <a href = "/hello">
+            <a onclick="loadRandomFact()">
                 Random Facts
             </a>
         </div>
 
-        </button>
+        <div class = "information link buttonEffect" id = "imageCredits">
+            <a onclick="loadCredits()">
+                Image Credits
+            </a>
+        </div>
+        
+        <div id = "fetchContainer" align = "center">
+            <br>
+            <h1 id = "fetchTitle"></h1>
+            <p id = "fetchText"></p>
+        </div>
     </div>
   </body>
 </html>
