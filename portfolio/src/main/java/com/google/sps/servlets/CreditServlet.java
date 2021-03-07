@@ -12,11 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/credits")
 public class CreditServlet extends HttpServlet {
 
-  @Override
-  public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String credits = 
+    private String credits = 
             "Background image: https://www.artstation.com/artwork/GXwZgz \n\n"+
             "User Interface Images: https://wenrexa.itch.io/ui-different01\n\n";
+            
+  @Override
+  public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        
         
         response.setContentType("text/html;");
         response.getWriter().println( credits );
