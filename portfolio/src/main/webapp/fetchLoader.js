@@ -15,3 +15,19 @@ async function loadCredits(){
     fetchTitle.innerText = "Image Credits";
     fetchContainer.innerText = textFromReponse;
 }  
+
+async function loadSkills(){
+
+    const responseFromServer = await fetch("/skills");
+    console.log(responseFromServer);
+    const json = await responseFromServer.json();
+    const fetchText = document.getElementById("fetchText");
+    const fetchTitle = document.getElementById("fetchTitle");
+    fetchTitle.innerText = "Skills";
+    let text = "";
+    json.Skills.forEach(object => {
+        text += object.name + "  " + object.level + "\n\n";
+    });
+    fetchText.innerText = text;
+
+}
