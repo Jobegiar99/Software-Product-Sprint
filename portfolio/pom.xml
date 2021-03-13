@@ -34,6 +34,11 @@
         <version>2.8.6</version>
     </dependency>
 
+    <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-datastore</artifactId>
+        <version>1.104.0</version>
+    </dependency>
     <!-- Jetty -->
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -46,6 +51,7 @@
       <version>${jetty.version}</version>
     </dependency>
   </dependencies>
+
 
   <build>
     <plugins>
@@ -70,6 +76,8 @@
           </execution>
         </executions>
       </plugin>
+
+      
 
       <!-- Package everything into a single executable jar file. -->
       <plugin>

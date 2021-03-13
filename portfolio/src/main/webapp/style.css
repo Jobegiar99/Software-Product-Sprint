@@ -9,7 +9,7 @@ body{
     font-family: 'Orbitron', sans-serif ;
     color: #0abdc6;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 a{
@@ -194,5 +194,5 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
-    font-size: 2vh;
+    font-size: 1.6vh;
 }
