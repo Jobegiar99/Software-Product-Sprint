@@ -9,7 +9,7 @@ body{
     font-family: 'Orbitron', sans-serif ;
     color: #0abdc6;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 a{
@@ -68,7 +68,7 @@ a{
   width: 50%;
   height: auto;
   position: fixed; /* or absolute */
-  top: 50%;
+  top: 40vh;
   left: 50%; 
   margin-top: -20%;
   margin-left: -25%;
@@ -88,6 +88,18 @@ a{
 #randomFacts{
     display: inline-block;
     margin-left: 8.5%;
+    width: 10vw;
+}
+
+#imageCredits{
+    display: inline-block;
+    margin-left: 10.2%;
+    width: 10vw;
+}
+
+#programmingLanguages{
+    display: inline-block;
+    margin-left: 11%;
     width: 10vw;
 }
 
@@ -115,7 +127,7 @@ a{
 
 #projectContainer{
     position: fixed;
-    top: 50%;
+    top: 40vh;
     left: 50%;
     margin-top: -20%;
     margin-left: -21%;
@@ -174,4 +186,13 @@ a{
 
 #projectContainerReturnButton{
     margin-left: 17%;
+}
+
+#fetchContainer{
+    background-image: url("/images/PanelWindow.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    font-size: 1.6vh;
 }
