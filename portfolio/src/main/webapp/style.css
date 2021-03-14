@@ -72,6 +72,8 @@ a{
   left: 50%; 
   margin-top: -20%;
   margin-left: -25%;
+  height: 100%;
+  overflow-y: auto;
 }
 
 #github{
@@ -100,6 +102,12 @@ a{
 #programmingLanguages{
     display: inline-block;
     margin-left: 11%;
+    width: 10vw;
+}
+
+#RandomMessage{
+    display: inline-block;
+    margin-left: 9%;
     width: 10vw;
 }
 
@@ -194,5 +202,11 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
-    font-size: 1.6vh;
+    font-size: 2vh;
+    overflow-y: auto;
+    height: 23vh;
+}
+#fetchText{
+    overflow-y: auto;
+    height: 100%;
 }
