@@ -19,7 +19,6 @@ async function loadCredits(){
 async function loadSkills(){
 
     const responseFromServer = await fetch("/skills");
-    console.log(responseFromServer);
     const json = await responseFromServer.json();
     const fetchText = document.getElementById("fetchText");
     const fetchTitle = document.getElementById("fetchTitle");
@@ -30,4 +29,13 @@ async function loadSkills(){
     });
     fetchText.innerText = text;
 
+}
+
+async function loadRandomMessage(){
+    const responseFromServer = await fetch("/random-message");
+    const responseText = await responseFromServer.text();
+    const fetchText = document.getElementById("fetchText");
+    const fetchTitle = document.getElementById("fetchTitle");
+    fetchTitle.innerText = "Random Message from someone who has visited my portfolio";
+    fetchText.innerText = responseText;
 }

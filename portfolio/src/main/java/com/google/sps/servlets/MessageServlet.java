@@ -15,6 +15,8 @@ import com.google.cloud.datastore.KeyFactory;
 @WebServlet("/message-me")
 public class MessageServlet extends HttpServlet {
 
+  Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
+  
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
@@ -23,9 +25,8 @@ public class MessageServlet extends HttpServlet {
 
     // Print the value so you can see it in the server logs.
     System.out.println("You submitted: " + textValue);
-    response.sendRedirect("projects.html");
-    Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
-    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Task");
+    
+    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Message");
     FullEntity taskEntity =
         Entity.newBuilder(keyFactory.newKey())
             .set("messageContent", textValue)
