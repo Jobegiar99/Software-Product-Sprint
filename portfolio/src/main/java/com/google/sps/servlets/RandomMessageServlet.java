@@ -52,8 +52,13 @@ public class RandomMessageServlet extends HttpServlet {
 
             messages.add(messageContent);
         }
-        String messageToDisplay = messages.get( rand.nextInt(messages.size()));
-        System.out.println(messageToDisplay);
-        response.getWriter().println( messageToDisplay );
+        if ( messages.size() > 0 ){
+            String messageToDisplay = messages.get( rand.nextInt(messages.size()));
+            System.out.println(messageToDisplay);
+            response.getWriter().println( messageToDisplay );
+        }
+        else{
+            response.getWriter().println("No messages yet :( add the first one! :)");
+        }
   }
 }
