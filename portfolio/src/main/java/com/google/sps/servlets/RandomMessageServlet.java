@@ -37,6 +37,7 @@ public class RandomMessageServlet extends HttpServlet {
 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     Random rand = new Random();
+    String messageToDisplay;
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -52,8 +53,16 @@ public class RandomMessageServlet extends HttpServlet {
 
             messages.add(messageContent);
         }
-        String messageToDisplay = messages.get( rand.nextInt(messages.size()));
-        System.out.println(messageToDisplay);
-        response.getWriter().println( messageToDisplay );
+
+    
+
+        if ( messages.size() > 0 ){
+            messageToDisplay = messages.get( rand.nextInt(messages.size()));
+        }
+        else{
+            messageToDisplay = "No messages yet :( add the first one! :)";
+        }
+
+        response.getWriter().println(messageToDisplay);
   }
 }
